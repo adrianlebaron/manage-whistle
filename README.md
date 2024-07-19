@@ -1,2 +1,2 @@
-## Simple version of the docs site for Whistle Coding LLC made with Mkdocs
+## Whistle Coding LLC Docs
 - At: [managewhistle.com](https://managewhistle.com)
