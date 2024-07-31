@@ -124,7 +124,7 @@ container_commands:
     2. Engine version la mas reciente
     3. Instance class db.t3.micro
     4. Storage 10 GB
-    5. El usuario puede permanecer ebroot y créale una contraseña que recuerdes
+    5. Crea un usuario con nombre de usuario que se parezca o sea igual al nombre de la aplicacion y créale una contraseña, guarda estas credenciales y pasaselas al manager
     6. Guarda los cambios y revisa que se actualice exitosamente el entorno
 
 - La siguiente sección es para que la aplicación de Django esté en HTTPS en internet y se requerirá que ya esté comprado el dominio que se usará para esta aplicación de django, si no está comprado todavía, contacta al project manager y omite estos siguientes pasos: 
