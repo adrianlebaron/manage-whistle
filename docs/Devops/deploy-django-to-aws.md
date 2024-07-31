@@ -98,13 +98,13 @@ packages:
 ```js
 option_settings:
     aws:elasticbeanstalk:container:python:
-//CAMBIA CONDE DICE backend AL NOMBRE DE TU PROYECTO DE DJANGO// ↓
+//CAMBIA DONDE DICE backend AL NOMBRE DE TU PROYECTO DE DJANGO// ↓
         WSGIPath: backend.wsgi:application
     aws:elasticbeanstalk:application:environment:
-//CAMBIA CONDE DICE backend AL NOMBRE DE TU PROYECTO DE DJANGO// ↓
+//CAMBIA DONDE DICE backend AL NOMBRE DE TU PROYECTO DE DJANGO// ↓
         DJANGO_SETTINGS_MODULE: backend.settings
     aws:elasticbeanstalk:environment:proxy:staticfiles:
-        /static: static
+        /static: staticfiles
 
 container_commands:
     01_migrate:
@@ -127,7 +127,7 @@ container_commands:
     5. El usuario puede permanecer ebroot y créale una contraseña que recuerdes
     6. Guarda los cambios y revisa que se actualice exitosamente el entorno
 
-- Esta sección es para que la aplicación de Django esté en HTTPS en internet y se requerirá que ya esté comprado el dominio que se usará para esta aplicación de django, si no está comprado todavía, contacta al project manager y omite estos siguientes pasos: 
+- La siguiente sección es para que la aplicación de Django esté en HTTPS en internet y se requerirá que ya esté comprado el dominio que se usará para esta aplicación de django, si no está comprado todavía, contacta al project manager y omite estos siguientes pasos: 
     1. Ve al servicio de AWS llamado **_Certificate Manager_** y obtén un nuevo certificado SSL para el dominio, solo tienes que poner el dominio correctamente y dejar las validaciones como están por DNS
 
     2. Luego entra en el certificado que acabas de solicitar que está en estatus pendiente, y da click en el botón de **_Create records in Route 53_** y después de esto el estatus cambiará a Issued en color verde y estará listo para usarse en el entorno de Elastic Beanstalk
