@@ -119,6 +119,7 @@ container_commands:
 
 ## 5. Personaliza y configura el entorno en Elastic Beanstalk y sus servicios relacionados
 
+### Networking and database
 - Primero configura la base de datos en la sección de **_ Networking and database_** (Esto creará su respectiva base de datos en el servicio de AWS RDS Relational Data Base)
     1. Selecciona Engine: postgres
     2. Engine version la mas reciente
@@ -127,6 +128,7 @@ container_commands:
     5. Crea un usuario con nombre de usuario que se parezca o sea igual al nombre de la aplicacion y créale una contraseña, guarda estas credenciales y pasaselas al manager
     6. Guarda los cambios y revisa que se actualice exitosamente el entorno
 
+### Certificate Manager
 - La siguiente sección es para que la aplicación de Django esté en HTTPS en internet y se requerirá que ya esté comprado el dominio que se usará para esta aplicación de django, si no está comprado todavía, contacta al project manager y omite estos siguientes pasos: 
     1. Ve al servicio de AWS llamado **_Certificate Manager_** y obtén un nuevo certificado SSL para el dominio, solo tienes que poner el dominio correctamente y dejar las validaciones como están por DNS
 
@@ -134,14 +136,17 @@ container_commands:
 
     3. De regreso en Elastic Beanstalk, en **_Configure instance traffic and scaling_** en la sección de **_Listeners_** agrega un nuevo puerto 443 protocolo HTTPS para que sea seguro y selecciona el certificado que acabas de solicitar
 
-    4. En **_Route 53_** en la ruta hospedada de tu dominio de backend agrega un registro tipo A que sea alias y agrega tu entorno de Elastic Beanstalk para que dirija el tráfico a ese dominio correctamente, sin este registro el dominio no hospedará tu aplicación de Django como esperas.
+### Route 53
+- En **_Route 53_** en la ruta hospedada de tu dominio de backend agrega un registro tipo A que sea alias y agrega tu entorno de Elastic Beanstalk para que dirija el tráfico a ese dominio correctamente, sin este registro el dominio no hospedará tu aplicación de Django como esperas.
 
+### Updates, monitoring, and logging
 - Agrega 5 **_Environment Properties_** en **_Updates, monitoring, and logging_** a mero abajo:
-    1. AWS_ACCESS_KEY_ID para esta crea un usuario con el nombre descriptivo de tu aplicacion ya que solo será usado para acceder al bucket de S3 de tu aplicacion, crealo en IAM con permiso AmazonS3FullAccess y creale a ese usuario Access key para que obtengas la Access key y la Secret Key para ponerlas en las variables de entorno.
-    2.  AWS_SECRET_ACCESS_KEY el valor de esta es el del mismo usuario que creaste
-    3.  AWS_S3_REGION_NAME debería ser la región del bucket que tienes que crear en S3 créalo en la región de Oregon y el valor para esta variable será us-west-2 El bucket debe estar configurado de la siguiente manera: quita la checkbox de Block all public access y todo lo demas igual y crealo con un nombre descriptivo sobre la aplicacion de elastic beanstalk
-    4.  AWS_STORAGE_BUCKET_NAME el nombre del bucket que acabas de crear
+    1. `AWS_ACCESS_KEY_ID` para esta crea un usuario con el nombre descriptivo de tu aplicacion ya que solo será usado para acceder al bucket de S3 de tu aplicacion, crealo en IAM con permiso AmazonS3FullAccess y creale a ese usuario Access key para que obtengas la Access key y la Secret Key para ponerlas en las variables de entorno.
+    2. `AWS_SECRET_ACCESS_KEY` el valor de esta es el del mismo usuario que creaste
+    3. `AWS_S3_REGION_NAME` debería ser la región del bucket que tienes que crear en S3 créalo en la región de Oregon y el valor para esta variable será us-west-2 El bucket debe estar configurado de la siguiente manera: quita la checkbox de Block all public access y todo lo demas igual y crealo con un nombre descriptivo sobre la aplicacion de elastic beanstalk
+    4. `AWS_STORAGE_BUCKET_NAME` el nombre del bucket que acabas de crear
 
+### De regreso a tu terminal de tu proyecto
 - Después de tener todo tu proyecto correctamente configurado para producción, despliega una nueva actualizacion a Elastic Beanstalk, los deploys se hacen desde el último commit, así que haz un commit con:
 
         git add .
