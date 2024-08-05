@@ -2,6 +2,6 @@
 
 1. Corre este comando en la carpeta raíz para remover de git esa carpeta que esté en todos lados en tu proyecto:
 
-        git rm --cached */nombreDeTuCarpeta/*
+        git rm -r -cached nombreDeTuCarpetaOArchivo
 
-2. Luego, agrega **`/nombreDeTuCarpeta`** **de nuevo**  a .gitignore aun si ya lo tenías, para que lo comience a ignorar otra vez, esto es necesario para que funcione
+2. Luego, agrega **`nombreDeTuCarpeta`** **de nuevo**  a .gitignore aun si ya lo tenías, para que lo comience a ignorar otra vez, esto es necesario para que funcione
