@@ -2,7 +2,7 @@
 
 1. Corre este comando en la carpeta donde esta el archivo o carpeta que quieres remover de git:
 
-        git rm -r -cached nombreDeTuCarpetaOArchivo
+        git rm -r --cached nombreDeTuCarpetaOArchivo
 
         <!-- O AGREGA */TuCarpetaOArchivo/* LOS ASTERISCOS Y DIAGONALES ALREDEDOR DEL NOMBRE DE ARCHIVO O CARPETA PARA QUE NO TENGAS QUE ENTRAR A LA CARPETA ESPECIFICA DONDE ESTA EL ARCHIVO -->
 
