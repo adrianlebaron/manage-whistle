@@ -38,7 +38,7 @@ Te debería salir la versión que tienes, por ejemplo:
 
 - La primera es el prefijo del dominio predeterminado que te da Elastic Beanstalk con la palabra -dev al final pero mejor crea uno sin la palabra dev para que se vea mejor, como el nombre de la aplicacion en sí, ejemplo: `lebaron-today`
 
-- La segunda pregunta es seleccionar el tipo de `load balancer`, hay tres: `classic, application, network`, elige el de `application`
+- La segunda pregunta es seleccionar el tipo de `load balancer`, hay tres: `classic, application, network`, elige el de `classic` para que sea más barato
 
 - La tercera es: Quieres habilitar `Spot Fleet requests` para el entorno? elige que no
 
@@ -134,7 +134,7 @@ container_commands:
 
     2. Luego entra en el certificado que acabas de solicitar que está en estatus pendiente, y da click en el botón de **_Create records in Route 53_** y después de esto el estatus cambiará a Issued en color verde y estará listo para usarse en el entorno de Elastic Beanstalk
 
-    3. De regreso en Elastic Beanstalk, en **_Configure instance traffic and scaling_** en la sección de **_Listeners_** agrega un nuevo puerto 443 protocolo HTTPS para que sea seguro y selecciona el certificado que acabas de solicitar
+    3. De regreso en Elastic Beanstalk, en **_Configure instance traffic and scaling_** en la sección de **_Listeners_** agrega un nuevo puerto 443 protocolo HTTPS para que sea seguro y selecciona el certificado que acabas de solicitar y cambia la cantidad de Max instances a 1 en lugar de 4 para que sea barato en la seccion de Capacity
 
 ### Route 53
 - En **_Route 53_** en la ruta hospedada de tu dominio de backend agrega un registro tipo A que sea alias y agrega tu entorno de Elastic Beanstalk para que dirija el tráfico a ese dominio correctamente, sin este registro el dominio no hospedará tu aplicación de Django como esperas.
