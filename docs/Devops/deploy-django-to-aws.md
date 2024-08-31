@@ -134,7 +134,8 @@ container_commands:
 
     2. Luego entra en el certificado que acabas de solicitar que está en estatus pendiente, y da click en el botón de **_Create records in Route 53_** y después de esto el estatus cambiará a Issued en color verde y estará listo para usarse en el entorno de Elastic Beanstalk
 
-    3. De regreso en Elastic Beanstalk, en **_Configure instance traffic and scaling_** en la sección de **_Listeners_** agrega un nuevo puerto 443 protocolo HTTPS para que sea seguro y selecciona el certificado que acabas de solicitar y cambia la cantidad de Max instances a 1 en lugar de 4 para que sea barato en la seccion de Capacity
+    3. De regreso en Elastic Beanstalk, en **_Configure instance traffic and scaling_** en la sección de **_Listeners_** agrega un nuevo puerto 443 protocolo HTTPS para que sea seguro y selecciona el certificado que acabas de solicitar y cambia a que sea Single instance en Capacity. ![image](https://github.com/user-attachments/assets/2c4e31f2-450b-459c-8a3f-d5731f772b83)
+
 
 ### Route 53
 - En **_Route 53_** en la ruta hospedada de tu dominio de backend agrega un registro tipo A que sea alias y agrega tu entorno de Elastic Beanstalk para que dirija el tráfico a ese dominio correctamente, sin este registro el dominio no hospedará tu aplicación de Django como esperas.
