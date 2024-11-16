@@ -61,10 +61,7 @@ plugins:
   - glightbox
   - search:
       lang: en
-  - git-revision-date-localized:
-      enabled: true
-      type: date  # Show only the date
-      fallback_to_build_date: false
+  - git-revision-date-localized
   - git-authors
 
 links:
