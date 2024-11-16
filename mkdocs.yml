@@ -1,6 +1,10 @@
 site_name: Manage Whistle Docs
+extra_css:
+  - assets/extra.css
+
 theme:
   name: material
+  custom_dir: templates
   features:
     - toc.integrate
     - search.suggest
@@ -13,6 +17,7 @@ theme:
     - navigation.tabs.sticky
     - navigation.sections
     - content.code.annotate
+    - content.metadata
 
   language: en
   palette:
@@ -56,12 +61,17 @@ plugins:
   - glightbox
   - search:
       lang: en
+  - git-revision-date-localized:
+      enabled: true
+      type: date  # Show only the date
+      fallback_to_build_date: false
+  - git-authors
 
 links:
   - plugins/search.md 
   - Insiders:
     - insiders/index.md#how-to-become-a-sponsor
     - insiders/getting-started.md#requirements
-  
+
 copyright: |
-  &copy; 2024 | Manage whistle docs
+  &copy; 2024 | Whistle Coding LLC all rights reserved

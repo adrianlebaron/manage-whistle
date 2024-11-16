@@ -1,1 +1,1 @@
-![Home, dev image](/images/portada.svg){align=right}
+![Home, dev image](images/portada.svg){align=right}
