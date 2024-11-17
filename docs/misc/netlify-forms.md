@@ -71,5 +71,3 @@ Netlify no va a detectar nuestro formulario de JSX ahí, así que, debemos agreg
 ```
 Debes incluir los atributos o propiedades correctas a las etiquetas y los mismos nombres de los inputs que pusiste en el formulario de `JSX`
 Eso es todo, ya solo debes lanzar tu sitio en Netlify para que pruebes si el formulario es detectado por Netlify y todo lo demás relacionado a eso como activar notificaciones, ver los envíos, entre otras cosas como viste en el doc de Netlify que puse al principio en esta guía👍😉
-
-****

@@ -4,7 +4,6 @@ extra_css:
 
 theme:
   name: material
-  custom_dir: templates
   features:
     - toc.integrate
     - search.suggest
@@ -30,7 +29,7 @@ theme:
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
-        name: Switch to light mode    
+        name: Switch to light mode
       primary: red
       accent: blue
 
@@ -61,8 +60,10 @@ plugins:
   - glightbox
   - search:
       lang: en
-  - git-revision-date-localized
-  - git-authors
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-authors:
+      enabled: true
 
 links:
   - plugins/search.md 

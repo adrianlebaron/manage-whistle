@@ -1,2 +1,3 @@
 # My python virtual environment at root folder
 env
+.env
