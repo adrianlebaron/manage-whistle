@@ -1,9 +1,20 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Authentication
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-<div id="login-container">
-  <button id="login-btn" onclick="netlifyIdentity.open()">Login</button>
+<div class="md-content">
+  <div class="md-content__inner">
+    <div id="login-container">
+      <h1>Login</h1>
+      <button id="login-btn" class="md-button md-button--primary" onclick="netlifyIdentity.open()">Login</button>
+    </div>
+  </div>
 </div>
 
 <script>

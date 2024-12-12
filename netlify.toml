@@ -1,8 +1,6 @@
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
+[build]
+  command = "mkdocs build"
+  publish = "site"
 
 [[redirects]]
   from = "/*"
@@ -10,7 +8,9 @@
   status = 401
   conditions = "Role = anonymous"
 
-[[redirects]]
-  from = "/login.md"
-  to = "/login.md"
-  status = 200
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Content-Security-Policy = "default-src 'self' https://identity.netlify.com;"
