@@ -65,13 +65,6 @@ plugins:
   - git-authors:
       enabled: true
 
-extra_javascript:
-  - https://identity.netlify.com/v1/netlify-identity-widget.js
-
-extra_css:
-  # Ensure your custom CSS is included
-  - path/to/your/custom/styles.css
-
 links:
   - plugins/search.md 
   - Insiders:
