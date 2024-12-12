@@ -1,0 +1,16 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+
+[[redirects]]
+  from = "/*"
+  to = "/login.md"
+  status = 401
+  conditions = "Role = anonymous"
+
+[[redirects]]
+  from = "/login.md"
+  to = "/login.md"
+  status = 200

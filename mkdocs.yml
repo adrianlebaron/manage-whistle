@@ -65,6 +65,9 @@ plugins:
   - git-authors:
       enabled: true
 
+extra_javascript:
+  - https://identity.netlify.com/v1/netlify-identity-widget.js
+
 links:
   - plugins/search.md 
   - Insiders:
