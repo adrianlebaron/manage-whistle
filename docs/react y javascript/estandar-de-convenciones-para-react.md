@@ -21,22 +21,22 @@ react-website/
 ├── src/
 │   ├── assets/
 │   │   ├── images/
-|   |   |   ├── logo.png
-│   │   |   ├── home/
-|   |   |   |   └── team-picture.jpg
-|   |   ├── icons/
-|   |   |   ├── arrow.svg
-|   |   |   ├── person.svg
-|   |   |   ├── burger-menu.svg
-|   |
+│   │   │   ├── logo.png
+│   │   │   ├── home/
+│   │   │   │   └── team-picture.jpg
+│   │   ├── icons/
+│   │   │   ├── arrow.svg
+│   │   │   ├── person.svg
+│   │   │   └── burger-menu.svg
+│   │
 │   ├── components/
 │   │   ├── global/
-|   |   |   ├── Header/
-|   │   │   │   ├── Header.jsx
-|   │   │   │   └── Header.css
-|   |   |   ├── Footer/
-|   │   │   │   ├── Footer.jsx
-|   │   │   │   └── Footer.css
+│   │   │   ├── Header/
+│   │   │   │   ├── Header.jsx
+│   │   │   │   └── Header.css
+│   │   │   ├── Footer/
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   └── Footer.css
 │   │   │
 │   │   └── home/
 │   │       ├── HeroBanner.jsx
@@ -45,23 +45,23 @@ react-website/
 │   ├── pages/
 │   │   ├── Home/
 │   │   │   ├── Home.jsx
-│   │   │   ├── Home.css
+│   │   │   └── Home.css
 │   │   │
 │   │   ├── About/
 │   │   │   ├── About.jsx
-│   │   │   ├── About.css
+│   │   │   └── About.css
 │   │   │
 │   │   ├── Services/
 │   │   │   ├── Services.jsx
-│   │   │   ├── Services.css
+│   │   │   └── Services.css
 │   │   │
 │   │   ├── Projects/
 │   │   │   ├── Projects.jsx
-│   │   │   ├── Projects.css
+│   │   │   └── Projects.css
 │   │   │
 │   │   └── Contact/
 │   │       ├── Contact.jsx
-│   │       ├── Contact.css
+│   │       └── Contact.css
 │   │
 │   ├── App.jsx
 │   ├── App.css
