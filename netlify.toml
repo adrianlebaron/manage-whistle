@@ -1,2 +1,6 @@
 [build]
-command = "apt-get update && apt-get install -y clang && pip install -r requirements.txt && mkdocs build"
+command = "pip install --upgrade pip setuptools wheel && pip install -r requirements.txt && mkdocs build"
+publish = "site"
+
+[build.environment]
+PYTHON_VERSION = "3.9"
