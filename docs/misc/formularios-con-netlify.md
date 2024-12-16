@@ -4,13 +4,13 @@
 🤚Despues de que le eches un vistazo a ese doc de Netlify regresa a esta guía para continuar!
 2. El único detalle que no incluye explicitamente el doc de Netlify es que para que nuestros formularios en React JSX sean detectados por Netlify, es que, debemos agregar el formulario a nuestro `index.html` también.
 3. Por ejemplo: tenemos un formulario de contacto > `ContactForm.jsx` que es el componente con el que va a interactuar el usuario en la página.
-4. Debes agregar este input escondido 👉 `<input type="hidden" name="form-name" value="form" />` como en la línea 5 del ejemplo de abajo
+4. Debes agregar este input escondido 👉 `<input type="hidden" name="form-name" value="el-nombre-de-tu-formulario" />` como en la línea 5 del ejemplo de abajo
 ```jsx title="TestForm.jsx" hl_lines="4-23" linenums="1"
 function testForm() {
     return (
         <>
-            <form name="contact" method="post" data-netlify="true">
-                <input type="hidden" name="form-name" value="form" />
+            <form name="el-nombre-de-tu-formulario" method="post" data-netlify="true">
+                <input type="hidden" name="form-name" value="el-nombre-de-tu-formulario" />
                 <p>
                     <label>Your Name: <input type="text" name="name" /></label>
                 </p>
@@ -58,7 +58,7 @@ Netlify no va a detectar nuestro formulario de JSX ahí, así que, debemos agreg
 </head>
 
 <body>
-  <form data-netlify="true" netlify name="test-form" method="post" hidden>
+  <form data-netlify="true" netlify name="el-nombre-de-tu-formulario" method="post" hidden>
     <input type="text" name="name" />
     <input type="email" name="email" />
     <select name="role[]" multiple></select>
