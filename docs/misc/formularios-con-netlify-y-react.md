@@ -1,4 +1,4 @@
-# Netlify Forms
+# Formularios con Netlify + React
 ### La funcionalidad de Netlify para manejar formularios sin servidor te permite manejar tus formularios sin llamadas API extras o Javascript adicional
 1. Sigue este doc de Netlify para que aprendas a detalle cómo activar la detección de formularios en tus sitios en tu dashboard de Netlify, ahí también explica más detalles sobre cómo crear formularios de HTML y Javascript con AJAX y más 👉 [Forms setup](https://docs.netlify.com/forms/setup/?_gl=1%2a1bsh0js%2a_gcl_au%2aOTc5MDY2NzU4LjE3MjkxMTM4Njg)
 🤚Despues de que le eches un vistazo a ese doc de Netlify regresa a esta guía para continuar!

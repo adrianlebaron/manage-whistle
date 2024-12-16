@@ -65,11 +65,5 @@ plugins:
   - git-authors:
       enabled: true
 
-links:
-  - plugins/search.md 
-  - Insiders:
-    - insiders/index.md#how-to-become-a-sponsor
-    - insiders/getting-started.md#requirements
-
 copyright: |
   &copy; 2024 | Whistle Coding LLC all rights reserved
