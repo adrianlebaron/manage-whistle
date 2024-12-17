@@ -6,7 +6,7 @@
 3. Por ejemplo: tenemos un formulario de contacto > `ContactForm.jsx` que es el componente con el que va a interactuar el usuario en la página.
 4. Debes agregar este input escondido 👉 `<input type="hidden" name="form-name" value="el-nombre-de-tu-formulario" />` como en la línea 5 del ejemplo de abajo
 
-```jsx title="TestForm.jsx" hl_lines="4-10" linenums="1"
+```jsx title="TestForm.jsx" hl_lines="4-14" linenums="1"
 export default function testForm() {
     return (
         <>
