@@ -51,7 +51,6 @@ Netlify no va a detectar nuestro formulario de JSX ahí, así que, debemos agreg
   <form data-netlify="true" netlify name="el-nombre-de-tu-formulario" method="post" hidden>
     <input type="text" name="name" />
     <input type="email" name="email" />
-    <select name="role[]" multiple></select>
     <textarea name="message"></textarea>
   </form>
   <div id="root"></div>
