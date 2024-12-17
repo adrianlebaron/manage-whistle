@@ -2,33 +2,19 @@
 ### La funcionalidad de Netlify para manejar formularios sin servidor te permite manejar tus formularios sin llamadas API extras o Javascript adicional
 1. Sigue este doc de Netlify para que aprendas a detalle cómo activar la detección de formularios en tus sitios en tu dashboard de Netlify, ahí también explica más detalles sobre cómo crear formularios de HTML y Javascript con AJAX y más 👉 [Forms setup](https://docs.netlify.com/forms/setup/?_gl=1%2a1bsh0js%2a_gcl_au%2aOTc5MDY2NzU4LjE3MjkxMTM4Njg)
 🤚Despues de que le eches un vistazo a ese doc de Netlify regresa a esta guía para continuar!
-2. El único detalle que no incluye explicitamente el doc de Netlify es que para que nuestros formularios en React JSX sean detectados por Netlify, es que, debemos agregar el formulario a nuestro `index.html` también.
+2. Debemos agregar el formulario a nuestro `index.html` también, si se usa `React`
 3. Por ejemplo: tenemos un formulario de contacto > `ContactForm.jsx` que es el componente con el que va a interactuar el usuario en la página.
 4. Debes agregar este input escondido 👉 `<input type="hidden" name="form-name" value="el-nombre-de-tu-formulario" />` como en la línea 5 del ejemplo de abajo
 ```jsx title="TestForm.jsx" hl_lines="4-23" linenums="1"
 function testForm() {
     return (
         <>
-            <form name="el-nombre-de-tu-formulario" method="post" data-netlify="true">
+            <form id="el-nombre-de-tu-formulario" method="post" data-netlify="true">
                 <input type="hidden" name="form-name" value="el-nombre-de-tu-formulario" />
-                <p>
-                    <label>Your Name: <input type="text" name="name" /></label>
-                </p>
-                <p>
-                    <label>Your Email: <input type="email" name="email" /></label>
-                </p>
-                <p>
-                    <label>Your Role: <select name="role[]" multiple>
-                        <option value="leader">Leader</option>
-                        <option value="follower">Follower</option>
-                    </select></label>
-                </p>
-                <p>
-                    <label>Message: <textarea name="message"></textarea></label>
-                </p>
-                <p>
-                    <button type="submit">Send</button>
-                </p>
+                <input type="text" name="name" />
+                <input type="email" name="email" />
+                <textarea name="message"></textarea>
+                <button type="submit">Send</button>
             </form>
         </>
     )
@@ -46,7 +32,7 @@ Netlify no va a detectar nuestro formulario de JSX ahí, así que, debemos agreg
 ```
 4. Necesitas agregar tu formulario dentro de la etiqueta `<body> </body>` en `index.html`, aunque no es necesario incluir todas las etiquetas envoltorias extra, por ejemplo así:
 
-```html title="index.html" hl_lines="12-17"
+```html title="index.html" hl_lines="12-17" linenums="1"
 <!DOCTYPE html>
 <html lang="en">
 
