@@ -5,8 +5,9 @@
 2. Debemos agregar el formulario a nuestro `index.html` también, si se usa `React`
 3. Por ejemplo: tenemos un formulario de contacto > `ContactForm.jsx` que es el componente con el que va a interactuar el usuario en la página.
 4. Debes agregar este input escondido 👉 `<input type="hidden" name="form-name" value="el-nombre-de-tu-formulario" />` como en la línea 5 del ejemplo de abajo
-```jsx title="TestForm.jsx" hl_lines="4-23" linenums="1"
-function testForm() {
+
+```jsx title="TestForm.jsx" hl_lines="4-10" linenums="1"
+export default function testForm() {
     return (
         <>
             <form id="el-nombre-de-tu-formulario" method="post" data-netlify="true">
@@ -20,7 +21,6 @@ function testForm() {
     )
 }
 
-export default testForm
 ```
 Netlify no va a detectar nuestro formulario de JSX ahí, así que, debemos agregarlo también en `index.html` para que lo detecte. Y la estructura de nuestro proyecto de React es:
 ```
