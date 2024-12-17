@@ -10,7 +10,11 @@
 export default function testForm() {
     return (
         <>
-            <form id="el-nombre-de-tu-formulario" method="post" data-netlify="true">
+            <form 
+                id="el-nombre-de-tu-formulario" 
+                method="post" 
+                data-netlify="true"
+            >
                 <input type="hidden" name="form-name" value="el-nombre-de-tu-formulario" />
                 <input type="text" name="name" />
                 <input type="email" name="email" />
