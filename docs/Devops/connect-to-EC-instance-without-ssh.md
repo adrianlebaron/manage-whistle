@@ -26,3 +26,8 @@ source ~/env_vars.sh
 ```bash
 - sudo dnf install postgresql15
 ```
+
+## You can obtain the username and password of a database with the following command:
+```bash
+/opt/elasticbeanstalk/bin/get-config environment
+```
