@@ -11,7 +11,7 @@ source /var/app/venv/staging-LQM1lest/bin/activate
 cd /var/app/current
 ```
 
-- You can get env variables with a command similar to the following
+- You can load the environment variables required by running the following commands
 ```bash
 sudo yum install -y jq
 ```
