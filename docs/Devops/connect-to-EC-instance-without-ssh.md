@@ -18,6 +18,15 @@ sudo yum install -y jq
 ```bash
 /opt/elasticbeanstalk/bin/get-config environment | jq -r 'to_entries|map("export\(.key)=\(.value|tostring)")|.[]' > ~/env_vars.sh
 ```
+```
+# Using the text editor nano ensure the SECRET_KEY value is between single quotes ('')
+# After editing the line should look something like this:
+# export SECRET_KEY='&*$HBfiquq0!rk7?36^dhF"mXYK&d'
+# save the file with CTRL + O and enter
+# and then you can close nano with CTRL + X
+
+nano ~/env_vars.sh
+```
 ```bash
 source ~/env_vars.sh
 ```
