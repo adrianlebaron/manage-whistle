@@ -16,7 +16,7 @@ cd /var/app/current
 sudo yum install -y jq
 ```
 ```bash
-/opt/elasticbeanstalk/bin/get-config environment | jq -r 'to_entries|map("export\(.key)=\(.value|tostring)")|.[]'>~/env_vars.sh
+/opt/elasticbeanstalk/bin/get-config environment | jq -r 'to_entries|map("export\(.key)=\(.value|tostring)")|.[]' > ~/env_vars.sh
 ```
 ```bash
 source ~/env_vars.sh
