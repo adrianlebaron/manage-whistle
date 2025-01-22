@@ -24,7 +24,7 @@ source ~/env_vars.sh
 
 - To install postgres, run:
 ```bash
-- sudo dnf install postgresql15
+sudo dnf install postgresql15
 ```
 
 ## You can obtain the username and password of a database with the following command:
