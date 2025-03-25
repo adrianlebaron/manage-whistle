@@ -60,10 +60,6 @@ plugins:
   - glightbox
   - search:
       lang: en
-  - git-revision-date-localized:
-      enable_creation_date: true
-  - git-authors:
-      enabled: true
 
 copyright: |
   &copy; 2025 | Whistle Coding LLC all rights reserved
