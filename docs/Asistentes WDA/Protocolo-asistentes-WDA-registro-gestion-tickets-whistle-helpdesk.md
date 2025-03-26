@@ -22,6 +22,7 @@ Quien responda primero al mensaje deberá crear un ticket en nuestra plataforma 
 ![image](https://github.com/user-attachments/assets/c4b20544-2d9d-4b81-ac08-ef529a61c084)
 
 Completar los siguientes campos en el ticket:
+
 - Título
 - Cliente (Si el cliente no está registrado en nuestra base de datos, créalo y asígnalo a una organización o empresa existente).
 - Notas sobre el origen de la solicitud, la hora en que se recibió (para determinar su prioridad).
