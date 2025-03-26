@@ -39,6 +39,7 @@ Al iniciar tu jornada laboral, además de las tareas que ya tienes asignadas, es
 Alguien del equipo monitoreará los tickets y aumentará la prioridad si un problema no se está resolviendo a tiempo.
 
 Proceso ideal para gestionar las solicitudes:
+
 - Primer respuesta en máximo 10 minutos dentro del horario de atención.
 - Actualizar el estado del problema dentro de 4 horas, indicando que se está resolviendo.
 - Cerrar o escalar el ticket en un máximo de 24 horas.
@@ -58,6 +59,7 @@ Cualquier cliente que no haya recibido una actualización en más de 4 horas des
 La excelencia en el servicio implica asegurarnos de que nuestros clientes sepan que estamos atendiendo sus solicitudes y que actuamos con profesionalismo.
 
 En resumen:
+
 - Revisa la bandeja de tickets y verifica cuáles necesitan atención.
 - Identifica los tickets que no han recibido actualización en más de 4 horas y proporciona una respuesta.
 - Resuelve cualquier ticket en el que puedas trabajar de inmediato.
@@ -93,6 +95,7 @@ Notificas al cliente que la tarea ha sido completada y le recuerdas que puede co
 Siempre que sea posible, debemos evitar agrupar varias solicitudes en un solo ticket, ya que esto permite a nuestro equipo trabajar y colaborar más rápido.
 
 Los tickets internos nos ayudan a entender:
+
 - Quién está trabajando en qué tareas.
 - Cuánto tiempo lleva resolver cada solicitud.
 - Qué problemas deben ser escalados a otro nivel.
@@ -103,9 +106,9 @@ Si necesitas ayuda después de crear tu ticket, sigue los siguientes niveles de 
 
 Contacta al personal de soporte senior.
 
-Si necesitas más ayuda, contacta a Zach Benedicto.
-
-Si el problema persiste, contacta a Héctor Sánchez.
+- Si necesitas ayuda, contacta a tus compañeros asistentes.
+- Si necesitas más ayuda, contacta a Zach Benedicto.
+- Si el problema persiste, contacta a Héctor Sánchez.
 
 Usa los canales públicos tanto como sea posible para que todo el equipo esté al tanto de lo que sucede y podamos colaborar mejor.
 
