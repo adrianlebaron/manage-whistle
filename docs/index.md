@@ -1,1 +1,0 @@
-![Home, dev image](images/portada.svg){align=right}
