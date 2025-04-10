@@ -118,9 +118,9 @@ Conclusión
 Siguiendo estos protocolos, aseguramos un servicio de calidad, optimizamos nuestro tiempo y fortalecemos la confianza de nuestros clientes en nuestro equipo.
 
 ## Sección 5
-Utilizar números de tickets nos ayuda a rastrear cualquier problema de clientes facilmente y detectar cualquier problema a largo plazo que quizá tenga que ser resuleto internamente.
+Utilizar números de tickets nos ayuda a rastrear cualquier problema de clientes fácilmente y detectar cualquier problema a largo plazo que quizá tenga que ser resuelto internamente.
 
-Números de tickets también te facilita poder notar cuales problemas haz resuleto que son cobrables al cliente o si es asistencia regular de soporte.
+Números de tickets también te facilitan poder notar cuales problemas haz resuelto que son cobrables al cliente o si es asistencia regular de soporte.
 
 Conforme avancemos, estaremos trabajando como equipo para usar números de tickets eficientemente.
 
@@ -128,9 +128,9 @@ Siempre deberíamos proporcionarle un número de ticket para referencia futura a
 
 Ejemplo:
 
-Hola Cliente, terminé de trabajar en aquella tarea que me necesitaba, puede referenciar el Ticker # 00000 como referencia.
+Hola Cliente, terminé de trabajar en aquella tarea que necesitaba, puede ver el Ticket # 00000 como referencia.
 
-Ahora, cuando envíes tu factura de cobro, puedes facilmente usar numeros de tickets para referenciar en lo que trabajaste.
+Ahora, cuando envíes tu factura de cobro, puedes fácilmente usar números de tickets para referenciar en lo que trabajaste.
 
 Ejemplo:
 
