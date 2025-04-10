@@ -116,3 +116,34 @@ Si es necesario contactar a Zach Benedicto, usa @Zach Benedicto en el canal ante
 
 Conclusión
 Siguiendo estos protocolos, aseguramos un servicio de calidad, optimizamos nuestro tiempo y fortalecemos la confianza de nuestros clientes en nuestro equipo.
+
+## Sección 5
+Utilizar números de tickets nos ayuda a rastrear cualquier problema de clientes facilmente y detectar cualquier problema a largo plazo que quizá tenga que ser resuleto internamente.
+
+Números de tickets también te facilita poder notar cuales problemas haz resuleto que son cobrables al cliente o si es asistencia regular de soporte.
+
+Conforme avancemos, estaremos trabajando como equipo para usar números de tickets eficientemente.
+
+Siempre deberíamos proporcionarle un número de ticket para referencia futura al cliente cuando sea que TERMINEMOS de resolver un problema.
+
+Ejemplo:
+
+Hola Cliente, terminé de trabajar en aquella tarea que me necesitaba, puede referenciar el Ticker # 00000 como referencia.
+
+Ahora, cuando envíes tu factura de cobro, puedes facilmente usar numeros de tickets para referenciar en lo que trabajaste.
+
+Ejemplo:
+
+Fecha: Fecha de Ejemplo
+
+Compañía 1
+Ticket #'s
+00001
+00002
+
+Compañía 2
+Ticket #'s
+00003
+00004
+
+Para nuestros registros internos, asegúrate de estar utilizando la funcionalidad de rastreo de tiempo del sistema de tickets, para que podamos referenciarlo y asegurarnos de pagarte adecuadamente por el tiempo que trabajaste.
