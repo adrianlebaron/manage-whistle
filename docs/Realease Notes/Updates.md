@@ -53,7 +53,7 @@ This improvement ensures admin users can now accurately monitor both web and mob
 
 ---
 
-## August/September  2025 Release Notes – Whistle Drywall App (Internal)
+# August/September  2025 Release Notes – Whistle Drywall App (Internal)
 
 ## 🚀 New Features
 
@@ -93,7 +93,7 @@ The system now displays a detailed message listing each service linked to an exi
 
 ---
 
-## July 2025 Release Notes – Whistle Drywall App (Internal)
+# July 2025 Release Notes – Whistle Drywall App (Internal)
 
 ## 🚀 New Features
 
