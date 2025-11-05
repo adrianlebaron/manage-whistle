@@ -50,8 +50,12 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.mark
-  - attr_list
-  - attr_list
+  - pymdownx.magiclink:
+      hide_protocol: true
+      repo_url_shortener: true
+      social_url_shorthand: true
+      user: WhistleCoding
+      repo: manage-whistle
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -65,4 +69,4 @@ plugins:
       lang: en
 
 copyright: |
-  &copy; 2025 | Whistle Coding LLC all rights reserved
+  &copy; 2025 | Whistle Coding LLC — All rights reserved
