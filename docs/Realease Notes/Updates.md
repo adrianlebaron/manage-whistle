@@ -3,6 +3,63 @@ This page is intended for internal development and QA reference of **Whistle Dry
 
 ---
 
+# December 2025 Release Notes – Whistle Drywall App (Internal)
+
+## 🐛 Bugs / Resolved Issues
+- **Worker Contracts – Job Dropdown**  
+  Fixed an issue where admin users could not change the job from the dropdown when editing a worker contract. Job names containing apostrophes no longer prevent updates from being saved.  
+  [CU-86b2j1cdk](https://app.clickup.com/t/86b2j1cdk)
+
+- **Billing – Edit Bill Item with Apostrophes**  
+  Fixed an issue where bill items with apostrophes (') in the service name could not be edited after creation. Special characters in bill item names are now handled correctly, allowing items to be modified without errors.  
+  [CU-86b5tf4rn](https://app.clickup.com/t/86b5tf4rn)
+
+## 🧠 Improvements / Enhancements
+- **Change Order Requests – Bulk Selection Across Pages**  
+  Enhanced the Change Order Request module so users can select multiple COR items across different pages. Selected items now persist when navigating between pages, allowing bulk actions to be completed without losing previous selections.  
+  [CU-86b7cx1wp](https://app.clickup.com/t/86b7cx1wp)
+
+- **Change Order Requests – Email Attachment Preview (Bulk Send)**  
+  Enhanced the COR bulk email preview so that when multiple CORs are selected, all corresponding attachment links are displayed in the Attachments section. Previously, only one attachment link appeared in the preview, even when multiple CORs were included.  
+  [CU-86b71gbgw](https://app.clickup.com/t/86b71gbgw)
+
+## 🚀 New Features
+- **Jobs Module – UI & Workflow Redesign**  
+  Introduced a redesigned Jobs module with a new table-based landing page, replacing the previous card layout. The new view improves scalability and visibility by displaying key job details such as Job Name, City, Start Date, Deadline, and Status, along with global search, pagination, and adjustable page size for easier navigation across large job lists.  
+  Each job row now includes a single Actions button that reveals available job actions (View, View SML, View PML, View SOV), keeping the interface clean while maintaining quick access to key job views.  
+  The job detail experience was redesigned with improved navigation across **Overview, Timeline, Geofence, Financials, and Documents**. Tags are now more interactive, supporting better organization and filtering across the app.  
+  A persistent timeline panel is displayed on the right side of the job view, providing continuous visibility into schedule, progress, key dates, status, and phase. An **Upcoming Items** section at the bottom of the timeline allows users to add and track upcoming milestones or inspections.  
+  A new **Financials** interface provides a consolidated view of cost codes, budget summaries, invoices, and supports creating invoices and purchase orders directly within a job.  
+  A new **Documents** interface centralizes project files, supporting uploads of PDFs, images, and documents. Files are organized into system folders such as Plans, Permits, Contracts, Photos, RFIs & Submittals, Correspondence, Reports, Inspections, Safety & Compliance, and Meeting Notes, with search and filtering for easier access.  
+  [CU-86b4x870x](https://app.clickup.com/t/86b4x870x)
+
+- **Time & Material (T&M) Module – Web App Availability**  
+  Introduced the Time & Material (T&M) module to the Web App, making it easier to track and manage items that were previously only available through the Mobile App, which was the sole place to create T&M records.  
+  The T&M workflow allows users to create a T&M record, select a project, add descriptions and reasons for work performed, and include labor, materials, equipment, photos, and files. The module supports a signing flow where the Foreman signs first, followed by the Superintendent via a secured link.  
+  Once both signatures are completed, users can generate a Change Order Request (COR) directly from the T&M record.  
+  [CU-86b29r13y](https://app.clickup.com/t/86b29r13y)
+
+- **Ability to Create a Bill from Purchase Order**  
+  Added the ability to create a Bill directly from a selected Purchase Order. When converting a PO to a Bill, each product line item from the purchase order is automatically converted into a corresponding bill item.  
+  Pricing for each bill item is populated from the product summary, improving accuracy and providing a clearer record of materials received and paid for based on supplier invoices.  
+  [CU-86b2ph7rw](https://app.clickup.com/t/86b2ph7rw)
+
+- **Reporting Module – Performance & Workflow Redesign (Admin Users)**  
+  Redesigned the Reporting module for admin users to improve performance, accuracy, and usability. Page load times and filter interactions were significantly optimized, reducing delays when applying filters, approvals, or creating new entries.  
+  The hours workflow was simplified by removing the separate Extra Hours approval feature. Extra Hours are now included directly in the total Hours calculation. A new **Paid Hours** column was added, allowing admin users to explicitly define the number of hours to be paid.  
+  When creating Bills from selected records, the system now uses **Paid Hours** as the source of truth, even when the value is zero or left blank.  
+  The **Generate Report** feature was updated to include the new columns, and calculations were reviewed and corrected to ensure consistency between hours and cost values.  
+  [CU-86b5xyax3](https://app.clickup.com/t/86b5xyax3)
+
+- **Ability to Create Tasks from SML**  
+  Added the ability to create tasks directly from selected Schedule of Materials and Labor (SML) line items. From the SML view, users can select one or more items and choose **Create Task**, generating a task for each selected line item.  
+  Tasks are automatically associated with the corresponding service item. If a matching tag exists, it is applied to the task; otherwise, a new tag is created based on the service item.  
+  [CU-86b2ph89m](https://app.clickup.com/t/86b2ph89m)
+
+
+---
+---
+
 # October 2025 Release Notes – Whistle Drywall App (Internal)
 
 ## 🚀 New Features
